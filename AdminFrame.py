@@ -61,7 +61,7 @@ class AdminFrame(Frame):
         adminPanel = Frame(master, width=width, height=height, bg=bgcolor)
         adminPanel.place(x=posx, y=posy)
 
-        headerLabel = Label(adminPanel, text="Amin Login:")
+        headerLabel = Label(adminPanel, text="Admin Login:")
         headerLabel.place(relx=0.5, rely=0.1, anchor=CENTER)
         headerLabel.config(font=("Arial", 18, "underline", "bold"))
 

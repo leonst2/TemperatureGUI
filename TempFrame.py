@@ -33,6 +33,6 @@ class TempFrame(Frame):
         avgBg = Frame(dataPanel, height=18, width=80, bg=cp.white)
         avgBg.place(relx=0.7, rely=0.8, anchor=CENTER)
 
-        infoLabel = Label(dataPanel, text="These data were collected, the last 24h")
+        infoLabel = Label(dataPanel, text="These data were collected the last 24h")
         infoLabel.place(relx=0.5, rely=0.95, anchor=CENTER)
         infoLabel.config(font=("Charcoal", 8, "italic"), fg=cp.darkGrey)
