@@ -22,7 +22,6 @@ class TopFrame(Frame):
                 database="1inf1tempsens"
             )
             curser = db.cursor()
-
             curser.execute("CREATE TABLE Test (test VARCHAR(50))")
 
         topPanel = Frame(master, width=width, height=height, bg=bgcolor)
