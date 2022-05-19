@@ -1,6 +1,5 @@
 from tkinter import *
 import colorpalet as cp
-import mysql.connector
 
 
 class TopFrame(Frame):
@@ -13,16 +12,6 @@ class TopFrame(Frame):
 
         def hoverLeave(event, btn):
             btn.config(bg=cp.lightGrey, fg=cp.closeRed)
-
-        def testDB():
-            db = mysql.connector.connect(
-                host="localhost",
-                user="1inf1tempsens",
-                password="awHqqS9SS0wtiqbW",
-                database="1inf1tempsens"
-            )
-            curser = db.cursor()
-            curser.execute("CREATE TABLE Test (test VARCHAR(50))")
 
         topPanel = Frame(master, width=width, height=height, bg=bgcolor)
         topPanel.place(x=posx, y=posy)
@@ -50,7 +39,6 @@ class TopFrame(Frame):
                          activebackground=cp.closeRed,
                          text="TEST",
                          bd=0,
-                         command=testDB,
                          relief=SUNKEN)
         testBtn.place(relx=0.2, rely=0.5, anchor=CENTER)
         testBtn.config(font=("Arial", 12, "bold"))
