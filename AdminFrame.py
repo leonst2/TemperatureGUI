@@ -93,3 +93,4 @@ class AdminFrame(Frame):
         messageLabel = Label(adminPanel)
         messageLabel.place(relx=0.5, rely=0.95, anchor=CENTER)
         messageLabel.config(font=("Charcoal", 8, "italic"), fg=cp.closeRed)
+
